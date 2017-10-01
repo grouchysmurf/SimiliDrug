@@ -24,6 +24,7 @@ The script will be significantly slower when using the strcmp2 scripts because t
 The aim of the project is to automate the calculation of similarity scores using the bi-sim algorithm to identify look-alike, sound-alike drug name pairs, as described in:
 
 Kondrak G, Dorr B. Automatic identification of confusable drug names. Artificial Intelligence in Medicine 2006; 36(1):29-42; doi: 10.1016/j.artmed.2005.07.005
+and
 Rash-Foanio C, Galanter W, Bryson M, et al. Automated detection of look-alike/sound-alike medication errors. Am J Health Syst Pharm 2017; 74(7): 521-527; doi: 10.2146/ajhp150690
 
 However, the script can accept any list of strings, not only drug names.
