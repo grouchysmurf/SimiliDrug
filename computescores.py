@@ -55,7 +55,7 @@ def bisim_perl(t):
     return(bisim)
 
 
-# RUNTIME
+# RUN
 # will return top 5 000 scores, change the upper boundary on line 74 to get a different number of results
 
 lines_list = makelineslist(source)
@@ -69,13 +69,13 @@ for p in pairs:
     p.extend([bisim1, bisim2, bisim3])#, bisim4])
 
 # at the following line adjust the list index to choose on which score to sort
-pairs = sorted(pairs, key=lambda p: p[3], reverse=False)
+pairs = sorted(pairs, key=lambda p: p[4], reverse=False)
 if len(pairs) > 5000:
     pairs = pairs[0:5000]
 else:
     pass
 
-with open('bisimoutput.csv', mode='w', newline='', encoding='utf-8', errors='strict') as output_file:
+with open('output.csv', mode='w', newline='', encoding='utf-8', errors='strict') as output_file:
     writer = csv.writer(output_file, dialect='excel', delimiter=';')
     writer.writerow(title_lines)
     for p in pairs:
